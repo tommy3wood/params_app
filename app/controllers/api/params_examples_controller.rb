@@ -11,4 +11,9 @@ class Api::ParamsExamplesController < ApplicationController
     render 'segment_params_action.json.jb'
   end
 
+  def form_params_action
+    @message = params[:message]
+    render 'form_params.json.jb'
+  end
+
 end
